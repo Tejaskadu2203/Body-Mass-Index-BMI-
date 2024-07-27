@@ -1,0 +1,46 @@
+
+height = input("Enter your height in meters: ")
+weight = input("Enter your weight in kilograms: ")
+
+weight_as_int = int(weight)
+height_as_float = float(height)
+
+
+bmi = weight_as_int / height_as_float ** 2
+
+Gender = input("Enter your gender (Male/Female): ").strip().capitalize()
+
+if Gender == "Male":
+    if bmi < 16:
+        print("You are having severe thinness")
+    elif 16 <= bmi < 17:
+        print("You are having moderate thinness")
+    elif 17 <= bmi < 18.5:
+        print("You are having mild thinness")
+    elif 18.5 <= bmi < 25:
+        print("You are normal")
+    elif 25 <= bmi < 30:
+        print("You are overweight")
+    elif 30 <= bmi < 35:
+        print("You are at Obese Class-1")
+    elif 35 <= bmi < 40:
+        print("You are at Obese Class-2")
+    else:
+        print("You are at Obese Class-3")
+elif Gender == "Female":
+    if bmi < 16:
+        print("You are body mass deficit")
+    elif 16 <= bmi < 18.5:
+        print("You are body weight deficit")
+    elif 18.5 <= bmi <= 24:
+        print("You are normal")
+    elif 25 <= bmi < 30:
+        print("You are overweight")
+    elif 30 <= bmi < 35:
+        print("You are at Obesity 1st Level")
+    elif 35 <= bmi < 40:
+        print("You are at Obesity 2nd Level")
+    else:
+        print("You are at Obesity 3rd Level")
+else:
+    print("Invalid gender input. Please enter 'Male' or 'Female'.")
