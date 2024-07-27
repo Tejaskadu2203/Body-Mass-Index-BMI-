@@ -1,1 +1,2 @@
 BMI, or Body Mass Index, is a simple numerical value derived from an individual's height and weight. It's used as a screening tool to categorize people into different weight status categories, such as underweight, normal weight, overweight, or obese. BMI is a useful general indicator of body fat and can help assess potential health risks related to weight. However, it doesn't directly measure body fat or account for muscle mass, bone density, or other factors, so it's often used in conjunction with other assessments for a more comprehensive understanding of health. 
+  
